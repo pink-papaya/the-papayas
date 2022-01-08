@@ -25,15 +25,18 @@ watch(query, () => {
   function filterFunction(items: Collection, parent?: Folder) {
     items.forEach((item) => {
       if (item.type === 'folder') {
-        return filterFunction(item.children, item);
+        filterFunction(item.children, item);
+        return;
       }
 
       if (!item.name.toLowerCase().includes(query.value.toLowerCase())) {
+        // eslint-disable-next-line no-param-reassign
         item.isVisible = false;
       }
     });
 
     if (parent) {
+      // eslint-disable-next-line no-param-reassign
       parent.isVisible = items.some((item) => item.isVisible !== false);
     }
   }

@@ -12,4 +12,6 @@ export interface Folder {
   isVisible?: boolean;
 }
 
-export type Collection = (Song | Folder)[];
+export type Item = Song | Folder;
+
+export type Collection = Item[];

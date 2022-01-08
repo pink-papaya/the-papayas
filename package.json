@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --ext .ts,.js,.vue --no-fix --max-warnings 0 src"
   },
   "dependencies": {
     "lodash": "^4.17.21",
@@ -13,12 +14,18 @@
   "devDependencies": {
     "@types/lodash": "^4.14.178",
     "@vitejs/plugin-vue": "^2.0.0",
-    "eslint": "^8.6.0",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "eslint": "8.6.0",
+    "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.2.0",
+    "eslint-plugin-vuejs-accessibility": "^1.1.1",
     "prettier": "^2.5.1",
     "typescript": "^4.4.4",
     "vite": "^2.7.2",
-    "vue-tsc": "^0.29.8"
+    "vue-tsc": "^0.30.2"
   }
 }

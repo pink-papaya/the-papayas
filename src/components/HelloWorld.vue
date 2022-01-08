@@ -7,23 +7,23 @@
     aria-label="search"
   />
 
-  <FileTree :items="items" />
+  <FileTree :items="filteredItems" />
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, watch } from 'vue';
 import cloneDeep from 'lodash/cloneDeep';
 import FileTree from './FileTree.vue';
 import songs from '../assets/songs.json';
-import { Song, Folder, Collection } from '../types';
+import { Folder, Collection } from '../types';
 
 const query = ref('');
 
-const items = computed(() => {
-  const filteredItems = cloneDeep(songs as Collection);
+const filteredItems = ref(cloneDeep(songs as Collection));
 
+watch(query, () => {
   function filterFunction(items: Collection, parent?: Folder) {
-    items.forEach((item, index) => {
+    items.forEach((item) => {
       if (item.type === 'folder') {
         return filterFunction(item.children, item);
       }
@@ -34,12 +34,10 @@ const items = computed(() => {
     });
 
     if (parent) {
-      parent.isVisible = items.some(item => item.isVisible !== false);
+      parent.isVisible = items.some((item) => item.isVisible !== false);
     }
   }
 
-  filterFunction(filteredItems);
-
-  return filteredItems;
+  filterFunction(filteredItems.value);
 });
 </script>

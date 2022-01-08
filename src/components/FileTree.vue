@@ -21,18 +21,7 @@
 
 <script setup lang=ts>
   import { ref } from 'vue';
-
-  interface Song {
-    name: string;
-    type: 'song';
-    updateDate: string;
-  }
-
-  interface Folder {
-    name: string;
-    type: 'folder';
-    children: (Folder|Song)[];
-  }
+  import { Folder, Song } from '../types';
 
   defineProps<{ items: (Folder|Song)[] }>()
 

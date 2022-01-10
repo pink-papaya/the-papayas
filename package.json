@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .ts,.js,.vue --fix --max-warnings 0 src"
+    "lint": "eslint --ext .ts,.js,.vue --no-fix --max-warnings 0 src"
   },
   "dependencies": {
     "lodash": "^4.17.21",
@@ -13,6 +13,8 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.178",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
     "@vitejs/plugin-vue": "^2.0.0",
     "@vue/eslint-config-airbnb": "^6.0.0",
     "@vue/eslint-config-typescript": "^10.0.0",

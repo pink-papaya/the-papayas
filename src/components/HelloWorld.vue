@@ -28,9 +28,11 @@ watch(query, () => {
         filterFunction(item.children, item);
         return;
       }
-      
+
       // eslint-disable-next-line no-param-reassign
-      item.isVisible = !item.name.toLowerCase().includes(query.value.toLowerCase());
+      item.isVisible = item.name
+        .toLowerCase()
+        .includes(query.value.toLowerCase());
     });
 
     if (parent) {

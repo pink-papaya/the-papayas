@@ -5,15 +5,24 @@
         v-if="item.isVisible !== false"
         :class="item.type"
         class="item"
+        tabindex="1"
+        @keyup.enter="toggle(item)"
         @click.self="toggle(item)"
       >
-        <span v-if="item.type === 'folder'">📁</span>
+        <template v-if="item.type === 'folder'">
+          <span v-show="itemStateMap[item.name] !== false">⏷</span>
+          <span v-show="itemStateMap[item.name] === false">⏵</span>
+          <span>📁</span>
+        </template>
         <span v-if="item.type === 'song'">♫</span>
 
         {{ item.name }}
 
         <div v-if="item.type === 'folder' && item.children" class="children">
-          <FileTree v-show="itemStateMap[item.name]" :items="item.children" />
+          <FileTree
+            v-show="itemStateMap[item.name] !== false"
+            :items="item.children"
+          />
         </div>
       </div>
     </template>
@@ -30,7 +39,10 @@ const itemStateMap = ref<Record<string, boolean>>({});
 
 function toggle(item: Folder | Song) {
   if (item.type === 'folder') {
-    itemStateMap.value[item.name] = !itemStateMap.value[item.name];
+    const currentState = itemStateMap.value[item.name];
+
+    itemStateMap.value[item.name] =
+      currentState === undefined ? false : !currentState;
   }
 }
 </script>

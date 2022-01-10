@@ -28,11 +28,9 @@ watch(query, () => {
         filterFunction(item.children, item);
         return;
       }
-
-      if (!item.name.toLowerCase().includes(query.value.toLowerCase())) {
-        // eslint-disable-next-line no-param-reassign
-        item.isVisible = false;
-      }
+      
+      // eslint-disable-next-line no-param-reassign
+      item.isVisible = !item.name.toLowerCase().includes(query.value.toLowerCase());
     });
 
     if (parent) {

@@ -2,7 +2,7 @@ on:
   schedule:
     # every 2 days, at midnight
     - cron: '0 0 */2 * *'
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   updateSongList:

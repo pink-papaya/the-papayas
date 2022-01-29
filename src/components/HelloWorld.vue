@@ -5,22 +5,28 @@
     name="search"
     placeholder="search"
     aria-label="search"
+    class="search-input"
   />
 
   <FileTree :items="filteredItems" />
+
+  <div>Last update: {{ createdAt }}</div>
 </template>
 
 <script setup lang="ts">
 import { ref, watch } from 'vue';
 import cloneDeep from 'lodash/cloneDeep';
 import debounce from 'lodash/debounce';
+import { format } from 'date-fns';
 import FileTree from './FileTree.vue';
-import songs from '../assets/songs.json';
+import songData from '../assets/songs.json';
 import { Folder, Collection } from '../types';
 
 const query = ref('');
 
-const filteredItems = ref(cloneDeep(songs as Collection));
+const createdAt = format(songData.createdAt, 'dd-MM-yyyy HH:mm:ss');
+
+const filteredItems = ref(cloneDeep(songData.data as Collection));
 
 function filterFunction(items: Collection, parent?: Folder) {
   items.forEach((item) => {
@@ -47,3 +53,11 @@ watch(query, () => {
   debouncedFilter(filteredItems.value);
 });
 </script>
+
+<style>
+.search-input {
+  padding: 8px;
+  max-width: 300px;
+  width: 100%;
+}
+</style>

@@ -1,0 +1,11 @@
+name: 'fetch song list'
+description: 'fetches the song list from the google app script'
+
+inputs:
+  API_ENDPOINT:
+    description: 'Endpoint for the google app script'
+    required: true
+
+runs:
+  using: 'node16'
+  main: 'dist/fetchList.js'

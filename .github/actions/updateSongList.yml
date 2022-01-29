@@ -1,0 +1,26 @@
+on:
+  workflow_dispatch
+
+jobs:
+  updateSongList:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: Replace song list
+        uses: ./.github/actions/fetchList/
+        with:
+          API_ENDPOINT: ${{secrets.API_ENDPOINT}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "$(git log --format='%ae' HEAD^!)"
+          git config --local user.name "$(git log --format='%an' HEAD^!)"
+          git add .
+          if [ -z "$(git status --porcelain)" ]; then
+            exit 0
+          fi
+          git commit -m "chore: Update song list"
+          git push

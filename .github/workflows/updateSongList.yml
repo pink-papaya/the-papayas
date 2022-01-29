@@ -2,9 +2,6 @@ on:
   schedule:
     # every 2 days, at midnight
     - cron: '0 0 */2 * *'
-  push:
-    branches:
-      - master
   workflow_dispatch
 
 jobs:

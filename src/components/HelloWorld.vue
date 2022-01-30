@@ -10,7 +10,7 @@
 
   <FileTree :items="filteredItems" class="file-tree" />
 
-  <div>Last update: {{ createdAt }}</div>
+  <footer class="footer">Last update: {{ createdAt }}</footer>
 </template>
 
 <script setup lang="ts">
@@ -64,5 +64,9 @@ watch(query, () => {
 .file-tree {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.footer {
+  padding: 16px 8px;
 }
 </style>

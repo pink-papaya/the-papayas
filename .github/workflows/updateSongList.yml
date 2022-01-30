@@ -1,3 +1,5 @@
+name: update-songs
+
 on:
   schedule:
     # every 2 days, at 23:23 UTC

@@ -28,7 +28,7 @@
             target="_blank"
             title="Search song name on youtube"
           >
-            <mdi-icon :path="mdiYoutube" size="18" />
+            <mdi-icon :path="mdiYoutube" :size="18" />
           </a>
         </div>
         <div v-if="item.type === 'folder' && item.children" class="children">

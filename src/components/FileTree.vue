@@ -7,7 +7,7 @@
         class="item"
         tabindex="0"
         @keyup.enter="toggle(item)"
-        @click.self="toggle(item)"
+        @click.stop="toggle(item)"
       >
         <div>
           <template v-if="item.type === 'folder'">

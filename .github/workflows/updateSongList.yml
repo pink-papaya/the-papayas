@@ -1,7 +1,7 @@
 on:
   schedule:
-    # every 2 days, at midnight
-    - cron: '0 0 * * *'
+    # every 2 days, at 23:23 UTC
+    - cron: '23 23 */2 * *'
   workflow_dispatch:
 
 jobs:

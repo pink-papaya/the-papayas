@@ -8,7 +8,7 @@
     class="search-input"
   />
 
-  <FileTree :items="filteredItems" />
+  <FileTree :items="filteredItems" class="file-tree" />
 
   <div>Last update: {{ createdAt }}</div>
 </template>
@@ -59,5 +59,10 @@ watch(query, () => {
   padding: 8px;
   max-width: 300px;
   width: 100%;
+}
+
+.file-tree {
+  max-width: 900px;
+  margin: 0 auto;
 }
 </style>

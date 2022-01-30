@@ -9,6 +9,11 @@ import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <style>
+body {
+  margin: 0;
+  background: lightblue;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

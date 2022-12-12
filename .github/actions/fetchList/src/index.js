@@ -17,7 +17,8 @@ async function run() {
       JSON.stringify(updatedSongList.data) !==
       JSON.stringify(currentSongList.data)
     ) {
-      fs.writeFileSync(songListPath, JSON.stringify(updatedSongList));
+      // write a prettified version so make diffs readable on github
+      fs.writeFileSync(songListPath, JSON.stringify(updatedSongList, null, 2));
     }
   } catch (error) {
     core.setFailed(error.message);

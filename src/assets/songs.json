@@ -1,5 +1,5 @@
 {
-  "createdAt": 1673479695897,
+  "createdAt": 1673825273589,
   "data": [
     {
       "name": "songs",
@@ -570,6 +570,11 @@
                       "updateDate": "2022-07-28T20:05:16.468Z"
                     }
                   ]
+                },
+                {
+                  "name": "Trivium - Anthem We Are the Fire",
+                  "type": "song",
+                  "updateDate": "2023-01-14T20:44:27.647Z"
                 },
                 {
                   "name": "Tiesto - The Business",

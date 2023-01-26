@@ -1,6 +1,7 @@
 {
   "name": "the-papayas",
   "version": "0.0.0",
+  "packageManager": "yarn@3.3.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",

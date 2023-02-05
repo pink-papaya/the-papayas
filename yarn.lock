@@ -58,6 +58,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/selector-specificity@npm:^2.0.0":
+  version: 2.1.1
+  resolution: "@csstools/selector-specificity@npm:2.1.1"
+  peerDependencies:
+    postcss: ^8.4
+    postcss-selector-parser: ^6.0.10
+  checksum: 392ab62732e93aa8cbea445bf3485c1acbbecc8ec087b200e06c9ddd2acf740fd1fe46abdacf813e7a50a95a60346377ee3eecb4e1fe3709582e2851430b376a
+  languageName: node
+  linkType: hard
+
 "@esbuild/android-arm64@npm:0.16.4":
   version: 0.16.4
   resolution: "@esbuild/android-arm64@npm:0.16.4"
@@ -312,6 +322,17 @@ __metadata:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
   checksum: 52dc02259d98da517fae4cb3a0a3850227bdae4939dda1980b788a7670636ca2b4a01b58df03dd5f65c1e3cb70c50fa8ce5762b582b3f499ec30ee5ce1fd9380
+  languageName: node
+  linkType: hard
+
+"@tailwindcss/forms@npm:^0.5.3":
+  version: 0.5.3
+  resolution: "@tailwindcss/forms@npm:0.5.3"
+  dependencies:
+    mini-svg-data-uri: ^1.2.3
+  peerDependencies:
+    tailwindcss: ">=3.0.0 || >= 3.0.0-alpha.1"
+  checksum: 9eddb4dbd06d01b1068138ff52a54ed0e35a28e7bfd3c72e226fc28658ecd92a9c078c4abe9c83db090984672040644d7ae2e035933fb619dd703df1d87aa275
   languageName: node
   linkType: hard
 
@@ -3104,6 +3125,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mini-svg-data-uri@npm:^1.2.3":
+  version: 1.4.4
+  resolution: "mini-svg-data-uri@npm:1.4.4"
+  bin:
+    mini-svg-data-uri: cli.js
+  checksum: 997f1fbd8d59a70f03761e18626d335197a3479cb9d1ff75678e4b64b864d32a0b8fc18115eabde035e5299b8b4a354a78e57dd6ac10f9d604162a6170898d09
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^3.0.4":
   version: 3.0.4
   resolution: "minimatch@npm:3.0.4"
@@ -3672,6 +3702,18 @@ __metadata:
   peerDependencies:
     postcss: ^8.2.14
   checksum: 2105dc52cd19747058f1a46862c9e454b5a365ac2e7135fc1015d67a8fe98ada2a8d9ee578e90f7a093bd55d3994dd913ba5ff1d5e945b4ed9a8a2992ecc8f10
+  languageName: node
+  linkType: hard
+
+"postcss-nesting@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "postcss-nesting@npm:11.1.0"
+  dependencies:
+    "@csstools/selector-specificity": ^2.0.0
+    postcss-selector-parser: ^6.0.10
+  peerDependencies:
+    postcss: ^8.4
+  checksum: 639392ca6909133c72e1a8450f6c1004d2bbdfe58404c2a021ef8fffe696cafd359cf8b55c92ddb75d0656d6f98885bd1807b5e701c1cba938a8a58167b55462
   languageName: node
   linkType: hard
 
@@ -4393,6 +4435,7 @@ __metadata:
   resolution: "the-papayas@workspace:."
   dependencies:
     "@mdi/js": ^7.1.96
+    "@tailwindcss/forms": ^0.5.3
     "@types/lodash": ^4.14.191
     "@typescript-eslint/eslint-plugin": ^5.46.1
     "@typescript-eslint/parser": ^5.46.1
@@ -4410,6 +4453,7 @@ __metadata:
     eslint-plugin-vuejs-accessibility: ^2.0.0
     lodash: ^4.17.21
     postcss: ^8.4.21
+    postcss-nesting: ^11.1.0
     prettier: ^2.8.1
     prettier-plugin-tailwindcss: ^0.2.2
     tailwindcss: ^3.2.4

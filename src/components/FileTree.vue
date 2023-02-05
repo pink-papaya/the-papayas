@@ -4,12 +4,12 @@
       <div
         v-if="item.isVisible !== false"
         :class="{ [item.type]: true, first: depth === 0 }"
-        class="item bg-slate-800 text-slate-400 shadow-xl"
+        class="item bg-slate-800 text-slate-400"
         tabindex="0"
         @keyup.enter="toggle(item)"
         @click.stop="toggle(item)"
       >
-        <div class="item-name">
+        <div class="item-name bg-slate-800">
           <template v-if="item.type === 'folder'">
             <span v-show="itemStateMap[item.name] !== false">⏷</span>
             <span v-show="itemStateMap[item.name] === false">⏵</span>
@@ -67,36 +67,45 @@ function toggle(item: Folder | Song) {
 }
 </script>
 
-<style lang="css">
+<style>
 .item {
   @apply font-medium;
 
-  .first {
-    margin-right: 8px;
+  &.first {
+    padding-right: 8px;
+    margin-top: 0;
   }
 
-  padding: 8px 0 8px 8px;
+  padding: 10px 0 6px 8px;
   margin: 8px 0 8px 8px;
+
+  &:last-child:not(.first) {
+    margin-bottom: 0;
+    padding-bottom: 8px;
+  }
 
   text-align: start;
 }
 
 .folder {
-  @apply cursor-pointer border-l-2 border-slate-400 font-bold;
+  @apply cursor-pointer border-l-2 border-slate-400 font-bold shadow-xl;
 
-  :hover {
-    @apply border-fuchsia-300 text-fuchsia-300;
+  > .item-name {
+    @apply sticky z-10 p-1 capitalize;
+    top: 120px;
+  }
 
-    > .item-name {
-      @apply text-fuchsia-300;
+  &:hover {
+    @apply border-pink-400;
+
+    & > .item-name {
+      @apply text-pink-400;
     }
   }
 }
 
 .song {
   cursor: default;
-  background: lightpink;
-
   display: flex;
   justify-content: space-between;
   align-items: center;

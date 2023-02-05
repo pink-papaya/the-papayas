@@ -1,14 +1,15 @@
 <template>
-  <input
-    v-model="query"
-    type="search"
-    name="search"
-    placeholder="search"
-    aria-label="search"
-    class="search-input"
-  />
-
-  <FileTree :items="filteredItems" class="file-tree rounded-lg" />
+  <div class="sticky top-0 z-20 bg-slate-900 py-10">
+    <input
+      v-model="query"
+      type="search"
+      name="search"
+      placeholder="Search"
+      aria-label="Search"
+      class="w-full max-w-[300px] rounded-md bg-slate-500 p-2 placeholder:text-slate-800 text-slate-900 focus:border-transparent focus:bg-slate-400 focus:ring-1 focus:ring-slate-500"
+    />
+  </div>
+  <FileTree :items="filteredItems" class="file-tree sticky rounded-lg" />
 
   <footer class="footer">Last update: {{ createdAt }}</footer>
 </template>
@@ -55,12 +56,6 @@ watch(query, () => {
 </script>
 
 <style>
-.search-input {
-  padding: 8px;
-  max-width: 300px;
-  width: 100%;
-}
-
 .file-tree {
   max-width: 900px;
   margin: 0 auto;

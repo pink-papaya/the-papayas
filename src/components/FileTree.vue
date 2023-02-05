@@ -27,7 +27,7 @@
             "
             target="_blank"
             rel="noopener noreferrer"
-            class="fill-slate-400 hover:fill-orange-900"
+            class="fill-slate-400 hover:fill-red-700"
             title="Search song name on youtube"
           >
             <mdi-icon :path="mdiYoutube" :size="18" />

@@ -3,13 +3,13 @@
     <template v-for="item in items" :key="item.name">
       <div
         v-if="item.isVisible !== false"
-        :class="item.type"
-        class="item"
+        :class="{ [item.type]: true, first: depth === 0 }"
+        class="item bg-slate-800 text-slate-400 shadow-xl"
         tabindex="0"
         @keyup.enter="toggle(item)"
         @click.stop="toggle(item)"
       >
-        <div>
+        <div class="item-name">
           <template v-if="item.type === 'folder'">
             <span v-show="itemStateMap[item.name] !== false">⏷</span>
             <span v-show="itemStateMap[item.name] === false">⏵</span>
@@ -26,6 +26,8 @@
               encodeURIComponent(item.name)
             "
             target="_blank"
+            rel="noopener noreferrer"
+            class="fill-slate-400 hover:fill-orange-900"
             title="Search song name on youtube"
           >
             <mdi-icon :path="mdiYoutube" :size="18" />
@@ -35,6 +37,7 @@
           <FileTree
             v-show="itemStateMap[item.name] !== false"
             :items="item.children"
+            :depth="depth + 1"
           />
         </div>
       </div>
@@ -48,7 +51,9 @@ import { mdiYoutube } from '@mdi/js';
 import { Collection, Folder, Song } from '../types';
 import MdiIcon from './MdiIcon.vue';
 
-defineProps<{ items: Collection }>();
+withDefaults(defineProps<{ items: Collection; depth: number }>(), {
+  depth: 0,
+});
 
 const itemStateMap = ref<Record<string, boolean>>({});
 
@@ -64,17 +69,28 @@ function toggle(item: Folder | Song) {
 
 <style lang="css">
 .item {
-  padding: 8px;
-  margin: 8px;
+  @apply font-medium;
+
+  .first {
+    margin-right: 8px;
+  }
+
+  padding: 8px 0 8px 8px;
+  margin: 8px 0 8px 8px;
 
   text-align: start;
-
-  border: 1px solid #ccc;
 }
 
 .folder {
-  background: lightcoral;
-  cursor: pointer;
+  @apply cursor-pointer border-l-2 border-slate-400 font-bold;
+
+  :hover {
+    @apply border-fuchsia-300 text-fuchsia-300;
+
+    > .item-name {
+      @apply text-fuchsia-300;
+    }
+  }
 }
 
 .song {

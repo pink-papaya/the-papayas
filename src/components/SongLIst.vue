@@ -8,7 +8,7 @@
     class="search-input"
   />
 
-  <FileTree :items="filteredItems" class="file-tree" />
+  <FileTree :items="filteredItems" class="file-tree rounded-lg" />
 
   <footer class="footer">Last update: {{ createdAt }}</footer>
 </template>

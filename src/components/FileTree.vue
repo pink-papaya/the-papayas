@@ -73,6 +73,8 @@ function toggle(item: Folder | Song) {
 
   &.first {
     padding-right: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
     margin-top: 0;
   }
 
@@ -92,7 +94,11 @@ function toggle(item: Folder | Song) {
 
   > .item-name {
     @apply sticky z-10 p-1 capitalize;
-    top: 120px;
+
+    top: 82px;
+    @screen md {
+      top: 120px;
+    }
   }
 
   &:hover {

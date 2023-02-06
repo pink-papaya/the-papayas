@@ -1,12 +1,12 @@
 <template>
-  <div class="sticky top-0 z-20 bg-slate-900 py-10">
+  <div class="sticky top-0 z-20 bg-slate-900 p-4 py-5 sm:py-10">
     <input
       v-model="query"
       type="search"
       name="search"
       placeholder="Search"
       aria-label="Search"
-      class="w-full max-w-[300px] rounded-md bg-slate-500 p-2 placeholder:text-slate-800 text-slate-900 focus:border-transparent focus:bg-slate-400 focus:ring-1 focus:ring-slate-500"
+      class="w-full max-w-[300px] rounded-md bg-slate-500 p-2 text-slate-900 placeholder:text-slate-800 focus:border-transparent focus:bg-slate-400 focus:ring-1 focus:ring-slate-500"
     />
   </div>
   <FileTree :items="filteredItems" class="file-tree sticky rounded-lg" />

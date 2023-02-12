@@ -34,7 +34,8 @@ const createdAt = format(songData.createdAt, 'dd-MM-yyyy HH:mm:ss');
 
 const filteredItems = ref(cloneDeep(songData.data as Collection));
 
-const resultsCount = ref(0);
+// start count at 1 to hide message on first load
+const resultsCount = ref(1);
 
 function filterFunction(items: Collection, parent?: Folder) {
   items.forEach((item) => {

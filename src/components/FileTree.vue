@@ -4,18 +4,33 @@
       <div
         v-if="item.isVisible !== false"
         :class="{ [item.type]: true, first: depth === 0 }"
-        class="item bg-slate-800 text-slate-400"
+        class="item bg-slate-800"
         tabindex="0"
         @keyup.enter="toggle(item)"
         @click.stop="toggle(item)"
       >
         <div class="item-name bg-slate-800">
           <template v-if="item.type === 'folder'">
-            <span v-show="itemStateMap[item.name] !== false">⏷</span>
-            <span v-show="itemStateMap[item.name] === false">⏵</span>
-            <span>📁</span>
+            <mdi-icon
+              v-show="itemStateMap[item.name] === false"
+              :path="mdiFolder"
+              :size="18"
+              class="inline"
+            />
+            <mdi-icon
+              v-show="itemStateMap[item.name] !== false"
+              :path="mdiFolderOpen"
+              :size="18"
+              class="inline"
+            />
           </template>
-          <span v-if="item.type === 'song'">♫</span>
+
+          <mdi-icon
+            v-if="item.type === 'song'"
+            :path="mdiMusicNote"
+            :size="18"
+            class="inline"
+          />
 
           {{ item.name }}
         </div>
@@ -47,7 +62,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { mdiYoutube } from '@mdi/js';
+import { mdiYoutube, mdiFolder, mdiFolderOpen, mdiMusicNote } from '@mdi/js';
 import { Collection, Folder, Song } from '../types';
 import MdiIcon from './MdiIcon.vue';
 
@@ -69,7 +84,7 @@ function toggle(item: Folder | Song) {
 
 <style>
 .item {
-  @apply font-medium;
+  @apply fill-slate-300 font-medium text-slate-300;
 
   &.first {
     padding-right: 8px;
@@ -79,7 +94,7 @@ function toggle(item: Folder | Song) {
   }
 
   padding: 10px 0 6px 8px;
-  margin: 8px 0 8px 8px;
+  margin: 8px 0 8px 12px;
 
   &:last-child:not(.first) {
     margin-bottom: 0;
@@ -90,27 +105,25 @@ function toggle(item: Folder | Song) {
 }
 
 .folder {
-  @apply cursor-pointer border-l-2 border-slate-400 font-bold shadow-xl;
+  @apply cursor-pointer border-l-2 border-slate-400 border-pink-200 font-bold shadow-xl;
 
   > .item-name {
-    @apply sticky z-10 p-1 capitalize;
+    @apply sticky z-10 fill-pink-200 p-1 capitalize text-pink-200;
 
-    top: 82px;
+    &:hover {
+      @apply fill-pink-300 text-pink-300;
+    }
+
+    top: 81px;
     @screen md {
       top: 120px;
-    }
-  }
-
-  &:hover {
-    @apply border-pink-400;
-
-    & > .item-name {
-      @apply text-pink-400;
     }
   }
 }
 
 .song {
+  margin-left: 0px;
+  padding-left: 4px;
   cursor: default;
   display: flex;
   justify-content: space-between;

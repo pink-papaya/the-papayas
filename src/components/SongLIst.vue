@@ -6,12 +6,17 @@
       name="search"
       placeholder="Search"
       aria-label="Search"
-      class="w-full max-w-[300px] rounded-md bg-slate-500 p-2 text-slate-900 placeholder:text-slate-800 focus:border-transparent focus:bg-slate-400 focus:ring-1 focus:ring-slate-500"
+      class="w-full max-w-[300px] rounded-md bg-slate-500 p-2 text-slate-900 placeholder:text-slate-800 focus:border-transparent focus:bg-slate-400 focus:ring-1 focus:ring-pink-300"
     />
   </div>
   <FileTree :items="filteredItems" class="file-tree sticky rounded-lg" />
+  <span v-show="!resultsCount" class="text-pink-400"
+    >We don't have that song... yet.</span
+  >
 
-  <footer class="footer">Last update: {{ createdAt }}</footer>
+  <footer class="text-shadow px-2 py-4 text-pink-200">
+    Last update: {{ createdAt }}
+  </footer>
 </template>
 
 <script setup lang="ts">
@@ -29,6 +34,8 @@ const createdAt = format(songData.createdAt, 'dd-MM-yyyy HH:mm:ss');
 
 const filteredItems = ref(cloneDeep(songData.data as Collection));
 
+const resultsCount = ref(0);
+
 function filterFunction(items: Collection, parent?: Folder) {
   items.forEach((item) => {
     if (item.type === 'folder') {
@@ -40,6 +47,10 @@ function filterFunction(items: Collection, parent?: Folder) {
     item.isVisible = item.name
       .toLowerCase()
       .includes(query.value.toLowerCase());
+
+    if (item.isVisible) {
+      resultsCount.value += 1;
+    }
   });
 
   if (parent) {
@@ -51,6 +62,7 @@ function filterFunction(items: Collection, parent?: Folder) {
 const debouncedFilter = debounce(filterFunction, 200);
 
 watch(query, () => {
+  resultsCount.value = 0;
   debouncedFilter(filteredItems.value);
 });
 </script>
@@ -59,9 +71,5 @@ watch(query, () => {
 .file-tree {
   max-width: 900px;
   margin: 0 auto;
-}
-
-.footer {
-  padding: 16px 8px;
 }
 </style>

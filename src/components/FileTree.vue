@@ -51,7 +51,7 @@ import { mdiYoutube } from '@mdi/js';
 import { Collection, Folder, Song } from '../types';
 import MdiIcon from './MdiIcon.vue';
 
-withDefaults(defineProps<{ items: Collection; depth: number }>(), {
+withDefaults(defineProps<{ items: Collection; depth?: number }>(), {
   depth: 0,
 });
 

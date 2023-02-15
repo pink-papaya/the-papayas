@@ -5,8 +5,8 @@
         v-if="item.isVisible !== false"
         :class="{ [item.type]: true, first: depth === 0 }"
         class="item bg-slate-800"
-        tabindex="0"
-        @keyup.enter="toggle(item)"
+        :tabindex="item.type === 'folder' ? 0 : -1"
+        @keyup.enter.stop="toggle(item)"
         @click.stop="toggle(item)"
       >
         <div class="item-name bg-slate-800">
@@ -61,16 +61,29 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { onBeforeMount, ref } from 'vue';
 import { mdiYoutube, mdiFolder, mdiFolderOpen, mdiMusicNote } from '@mdi/js';
 import { Collection, Folder, Song } from '../types';
 import MdiIcon from './MdiIcon.vue';
 
-withDefaults(defineProps<{ items: Collection; depth?: number }>(), {
-  depth: 0,
-});
+const props = withDefaults(
+  defineProps<{ items: Collection; depth?: number }>(),
+  { depth: 0 },
+);
 
 const itemStateMap = ref<Record<string, boolean>>({});
+
+onBeforeMount(() => {
+  if (props.depth !== 1) {
+    return;
+  }
+
+  props.items
+    .filter((item) => item.type === 'folder')
+    .forEach((item) => {
+      itemStateMap.value[item.name] = false;
+    });
+});
 
 function toggle(item: Folder | Song) {
   if (item.type === 'folder') {
@@ -84,20 +97,17 @@ function toggle(item: Folder | Song) {
 
 <style>
 .item {
-  @apply fill-slate-300 font-medium text-slate-300;
+  @apply border-l-2 border-pink-200 fill-slate-300 font-medium text-slate-300;
 
   &.first {
-    padding-right: 8px;
-    margin-left: 16px;
+    padding-right: 16px;
     margin-right: 16px;
-    margin-top: 0;
   }
 
   padding: 10px 0 6px 8px;
-  margin: 8px 0 8px 12px;
+  margin: 0 0 0 12px;
 
   &:last-child:not(.first) {
-    margin-bottom: 0;
     padding-bottom: 8px;
   }
 
@@ -106,6 +116,10 @@ function toggle(item: Folder | Song) {
 
 .folder {
   @apply cursor-pointer border-l-2 border-slate-400 border-pink-200 font-bold shadow-xl;
+
+  &.first {
+    @apply border-transparent;
+  }
 
   > .item-name {
     @apply sticky z-10 fill-pink-200 p-1 capitalize text-pink-200;
@@ -122,11 +136,13 @@ function toggle(item: Folder | Song) {
 }
 
 .song {
-  margin-left: 0px;
-  padding-left: 4px;
   cursor: default;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  > .item-name {
+    @apply pl-1;
+  }
 }
 </style>

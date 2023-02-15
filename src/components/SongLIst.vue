@@ -60,10 +60,12 @@ function filterFunction(items: Collection, parent?: Folder) {
   }
 }
 
-const debouncedFilter = debounce(filterFunction, 200);
+const debouncedFilter = debounce((items: Collection) => {
+  resultsCount.value = 0;
+  filterFunction(items);
+}, 200);
 
 watch(query, () => {
-  resultsCount.value = 0;
   debouncedFilter(filteredItems.value);
 });
 </script>

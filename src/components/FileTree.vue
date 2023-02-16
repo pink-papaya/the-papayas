@@ -3,19 +3,34 @@
     <template v-for="item in items" :key="item.name">
       <div
         v-if="item.isVisible !== false"
-        :class="item.type"
-        class="item"
-        tabindex="0"
-        @keyup.enter="toggle(item)"
+        :class="{ [item.type]: true, first: depth === 0 }"
+        class="item bg-slate-800"
+        :tabindex="item.type === 'folder' ? 0 : -1"
+        @keyup.enter.stop="toggle(item)"
         @click.stop="toggle(item)"
       >
-        <div>
+        <div class="item-name bg-slate-800">
           <template v-if="item.type === 'folder'">
-            <span v-show="itemStateMap[item.name] !== false">⏷</span>
-            <span v-show="itemStateMap[item.name] === false">⏵</span>
-            <span>📁</span>
+            <mdi-icon
+              v-show="itemStateMap[item.name] === false"
+              :path="mdiFolder"
+              :size="18"
+              class="inline"
+            />
+            <mdi-icon
+              v-show="itemStateMap[item.name] !== false"
+              :path="mdiFolderOpen"
+              :size="18"
+              class="inline"
+            />
           </template>
-          <span v-if="item.type === 'song'">♫</span>
+
+          <mdi-icon
+            v-if="item.type === 'song'"
+            :path="mdiMusicNote"
+            :size="18"
+            class="inline"
+          />
 
           {{ item.name }}
         </div>
@@ -26,6 +41,8 @@
               encodeURIComponent(item.name)
             "
             target="_blank"
+            rel="noopener noreferrer"
+            class="fill-slate-400 hover:fill-red-700"
             title="Search song name on youtube"
           >
             <mdi-icon :path="mdiYoutube" :size="18" />
@@ -35,6 +52,7 @@
           <FileTree
             v-show="itemStateMap[item.name] !== false"
             :items="item.children"
+            :depth="depth + 1"
           />
         </div>
       </div>
@@ -43,14 +61,29 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import { mdiYoutube } from '@mdi/js';
+import { onBeforeMount, ref } from 'vue';
+import { mdiYoutube, mdiFolder, mdiFolderOpen, mdiMusicNote } from '@mdi/js';
 import { Collection, Folder, Song } from '../types';
 import MdiIcon from './MdiIcon.vue';
 
-defineProps<{ items: Collection }>();
+const props = withDefaults(
+  defineProps<{ items: Collection; depth?: number }>(),
+  { depth: 0 },
+);
 
 const itemStateMap = ref<Record<string, boolean>>({});
+
+onBeforeMount(() => {
+  if (props.depth !== 1) {
+    return;
+  }
+
+  props.items
+    .filter((item) => item.type === 'folder')
+    .forEach((item) => {
+      itemStateMap.value[item.name] = false;
+    });
+});
 
 function toggle(item: Folder | Song) {
   if (item.type === 'folder') {
@@ -62,27 +95,55 @@ function toggle(item: Folder | Song) {
 }
 </script>
 
-<style lang="css">
+<style>
 .item {
-  padding: 8px;
-  margin: 8px;
+  @apply border-l-2 border-pink-200 fill-slate-300 font-medium text-slate-300;
+
+  &.first {
+    padding-right: 16px;
+    margin-right: 16px;
+  }
+
+  padding: 10px 0 6px 8px;
+  margin: 0 0 0 12px;
+
+  &:last-child:not(.first) {
+    padding-bottom: 8px;
+    @apply border-b-2 border-b-gray-900;
+  }
 
   text-align: start;
-
-  border: 1px solid #ccc;
 }
 
 .folder {
-  background: lightcoral;
-  cursor: pointer;
+  @apply cursor-pointer border-l-2 border-slate-400 border-l-pink-200 font-bold;
+
+  &.first {
+    @apply border-transparent;
+  }
+
+  > .item-name {
+    @apply sticky z-10 fill-pink-200 p-1 capitalize text-pink-200;
+
+    &:hover {
+      @apply fill-pink-300 text-pink-300;
+    }
+
+    top: 81px;
+    @screen md {
+      top: 120px;
+    }
+  }
 }
 
 .song {
   cursor: default;
-  background: lightpink;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  > .item-name {
+    @apply pl-1;
+  }
 }
 </style>

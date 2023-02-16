@@ -109,13 +109,14 @@ function toggle(item: Folder | Song) {
 
   &:last-child:not(.first) {
     padding-bottom: 8px;
+    @apply border-b-2 border-b-gray-900;
   }
 
   text-align: start;
 }
 
 .folder {
-  @apply cursor-pointer border-l-2 border-slate-400 border-pink-200 font-bold shadow-xl;
+  @apply cursor-pointer border-l-2 border-slate-400 border-l-pink-200 font-bold;
 
   &.first {
     @apply border-transparent;

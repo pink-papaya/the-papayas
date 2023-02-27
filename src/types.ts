@@ -2,6 +2,11 @@ export interface Song {
   name: string;
   type: 'song';
   updateDate: string;
+  meta: {
+    fullName?: string;
+    shortName?: string;
+    arrangedBy?: string;
+  };
   isVisible?: boolean;
 }
 

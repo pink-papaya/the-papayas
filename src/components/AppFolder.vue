@@ -4,13 +4,8 @@
       :class="{ 'border-transparent': depth === 0 }"
       class="sticky top-[81px] z-10 flex items-center gap-x-1 bg-slate-800 fill-pink-200 p-1 capitalize text-pink-200 hover:fill-pink-300 hover:text-pink-300 sm:top-[120px]"
     >
-      <mdi-icon v-show="!isOpen" :path="mdiFolder" :size="18" class="inline" />
-      <mdi-icon
-        v-show="isOpen"
-        :path="mdiFolderOpen"
-        :size="18"
-        class="inline"
-      />
+      <mdi-icon v-show="!isOpen" :path="mdiFolder" :size="18" />
+      <mdi-icon v-show="isOpen" :path="mdiFolderOpen" :size="18" />
 
       {{ folder.name }}
     </div>

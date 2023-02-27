@@ -15,7 +15,7 @@
   >
 
   <footer class="text-shadow px-2 py-4 text-pink-200">
-    Last update: {{ createdAt }}
+    Last update: {{ timeSinceCreate }} ({{ createdAt }})
   </footer>
 </template>
 
@@ -23,7 +23,7 @@
 import { ref, watch } from 'vue';
 import cloneDeep from 'lodash/cloneDeep';
 import debounce from 'lodash/debounce';
-import { format } from 'date-fns';
+import { format, formatDistance } from 'date-fns';
 import FileTree from './FileTree.vue';
 import songData from '../assets/songs.json';
 import { Folder, Collection } from '../types';
@@ -31,6 +31,9 @@ import { Folder, Collection } from '../types';
 const query = ref('');
 
 const createdAt = format(songData.createdAt, 'dd-MM-yyyy HH:mm:ss');
+const timeSinceCreate = formatDistance(songData.createdAt, Date.now(), {
+  addSuffix: true,
+});
 
 const filteredItems = ref(cloneDeep(songData.data as Collection));
 

@@ -1,5 +1,5 @@
 {
-  "createdAt": 1684711482444,
+  "createdAt": 1684884278003,
   "data": [
     {
       "name": "songs",
@@ -1676,9 +1676,19 @@
                   "type": "folder",
                   "children": [
                     {
+                      "name": "Avenged Sevenfold - Chapter Four [The Papayas]",
+                      "type": "song",
+                      "updateDate": "2023-05-22T22:43:51.049Z",
+                      "meta": {
+                        "fullName": "Avenged Sevenfold - Chapter Four [The Papayas]",
+                        "shortName": "Avenged Sevenfold - Chapter Four",
+                        "arrangedBy": "The Papayas"
+                      }
+                    },
+                    {
                       "name": "Avenged Sevenfold - I Won't See You Tonight Part 1 [The Papayas]",
                       "type": "song",
-                      "updateDate": "2023-05-21T21:10:27.373Z",
+                      "updateDate": "2023-05-22T22:04:54.599Z",
                       "meta": {
                         "fullName": "Avenged Sevenfold - I Won't See You Tonight Part 1 [The Papayas]",
                         "shortName": "Avenged Sevenfold - I Won't See You Tonight Part 1",

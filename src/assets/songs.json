@@ -1,5 +1,5 @@
 {
-  "createdAt": 1691796243011,
+  "createdAt": 1692487442996,
   "data": [
     {
       "name": "songs",
@@ -989,6 +989,16 @@
                   "name": "xiv",
                   "type": "folder",
                   "children": [
+                    {
+                      "name": "Endwalker Dedicated to Moonlight [Harmonia Crystal ft Bryn Girl].",
+                      "type": "song",
+                      "updateDate": "2023-08-18T22:21:01.825Z",
+                      "meta": {
+                        "fullName": "Endwalker Dedicated to Moonlight [Harmonia Crystal ft Bryn Girl]",
+                        "shortName": "Endwalker Dedicated to Moonlight",
+                        "arrangedBy": "Harmonia Crystal ft Bryn Girl"
+                      }
+                    },
                     {
                       "name": "Endwalker Dedicated to Moonlight [Harmonia Crystal ft Bryn Girl]",
                       "type": "song",

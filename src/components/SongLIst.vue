@@ -20,10 +20,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { onBeforeMount, ref, watch } from 'vue';
 import cloneDeep from 'lodash/cloneDeep';
 import debounce from 'lodash/debounce';
-import { format, formatDistance } from 'date-fns';
+import { format, formatDistance, differenceInDays } from 'date-fns';
 import FileTree from './FileTree.vue';
 import songData from '../assets/songs.json';
 import { Folder, Collection } from '../types';
@@ -39,6 +39,28 @@ const filteredItems = ref(cloneDeep(songData.data as Collection));
 
 // start count at 1 to hide message on first load
 const resultsCount = ref(1);
+
+function setIsNewFlag(items: Collection, parent?: Folder) {
+  items.forEach((item) => {
+    if (item.type === 'folder') {
+      setIsNewFlag(item.children, item);
+      return;
+    }
+
+    // eslint-disable-next-line no-param-reassign
+    item.isNew =
+      differenceInDays(songData.createdAt, new Date(item.updateDate)) < 10;
+  });
+
+  if (parent) {
+    // eslint-disable-next-line no-param-reassign
+    parent.isNew = items.some((item) => item.isNew !== false);
+  }
+}
+
+onBeforeMount(() => {
+  setIsNewFlag(filteredItems.value);
+});
 
 function filterFunction(items: Collection, parent?: Folder) {
   items.forEach((item) => {

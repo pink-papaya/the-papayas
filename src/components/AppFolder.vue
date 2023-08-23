@@ -8,6 +8,8 @@
       <mdi-icon v-show="isOpen" :path="mdiFolderOpen" :size="18" />
 
       {{ folder.name }}
+
+      <new-item-icon v-if="folder.isNew" />
     </div>
     <div v-if="folder.children" class="children">
       <FileTree v-show="isOpen" :items="folder.children" :depth="depth + 1" />
@@ -20,6 +22,7 @@ import { mdiFolder, mdiFolderOpen } from '@mdi/js';
 import { Folder } from '../types';
 import FileTree from './FileTree.vue';
 import MdiIcon from './MdiIcon.vue';
+import NewItemIcon from './NewItemIcon.vue';
 
 defineProps<{ folder: Folder; depth: number; isOpen: boolean }>();
 </script>

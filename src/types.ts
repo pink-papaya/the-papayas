@@ -8,6 +8,7 @@ export interface Song {
     arrangedBy?: string;
   };
   isVisible?: boolean;
+  isNew?: boolean;
 }
 
 export interface Folder {
@@ -15,6 +16,7 @@ export interface Folder {
   type: 'folder';
   children: (Folder | Song)[];
   isVisible?: boolean;
+  isNew?: boolean;
 }
 
 export type Item = Song | Folder;

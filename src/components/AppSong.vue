@@ -14,9 +14,11 @@
           {{ song.name }}
         </template>
       </div>
+
+      <new-item-icon v-if="song.isNew" />
     </div>
 
-    <div style="height: 18px">
+    <div class="flex align-middle" style="height: 18px">
       <a
         :href="
           'https://www.youtube.com/results?search_query=' +
@@ -37,6 +39,7 @@
 import { mdiMusicNote, mdiYoutube } from '@mdi/js';
 import { Song } from '../types';
 import MdiIcon from './MdiIcon.vue';
+import NewItemIcon from './NewItemIcon.vue';
 
 defineProps<{ song: Song }>();
 </script>

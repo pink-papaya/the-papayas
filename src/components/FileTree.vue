@@ -35,7 +35,7 @@ const props = withDefaults(
 const itemStateMap = ref<Record<string, boolean>>({});
 
 onBeforeMount(() => {
-  if (props.depth !== 1) {
+  if (props.depth < 1) {
     return;
   }
 

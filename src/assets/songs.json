@@ -1,5 +1,5 @@
 {
-  "createdAt": 1692755789105,
+  "createdAt": 1693005861941,
   "data": [
     {
       "name": "songs",
@@ -1709,6 +1709,16 @@
                   "name": "wip",
                   "type": "folder",
                   "children": [
+                    {
+                      "name": "My Chemical Romance - Welcome to the Black Parade [The Papayas]",
+                      "type": "song",
+                      "updateDate": "2023-08-24T00:32:02.375Z",
+                      "meta": {
+                        "fullName": "My Chemical Romance - Welcome to the Black Parade [The Papayas]",
+                        "shortName": "My Chemical Romance - Welcome to the Black Parade",
+                        "arrangedBy": "The Papayas"
+                      }
+                    },
                     {
                       "name": "FIFTY FIFTY - Cupid (Twin Ver.)",
                       "type": "song",

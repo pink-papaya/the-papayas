@@ -1,5 +1,5 @@
 {
-  "createdAt": 1698103479159,
+  "createdAt": 1699226648085,
   "data": [
     {
       "name": "songs",
@@ -1710,6 +1710,12 @@
                   "type": "folder",
                   "children": [
                     {
+                      "name": "Cutting Crew - (I Just) Died in Your Arms",
+                      "type": "song",
+                      "updateDate": "2023-11-05T22:42:31.111Z",
+                      "meta": {}
+                    },
+                    {
                       "name": "My Chemical Romance - Welcome to the Black Parade [The Papayas]",
                       "type": "song",
                       "updateDate": "2023-08-24T00:32:02.375Z",
@@ -1844,7 +1850,7 @@
                 {
                   "name": "Iron Maiden - Fear of the Dark [The Papayas]",
                   "type": "song",
-                  "updateDate": "2023-10-23T22:33:03.907Z",
+                  "updateDate": "2023-11-05T23:12:40.821Z",
                   "meta": {
                     "fullName": "Iron Maiden - Fear of the Dark [The Papayas]",
                     "shortName": "Iron Maiden - Fear of the Dark",

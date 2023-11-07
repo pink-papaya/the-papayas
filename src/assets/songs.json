@@ -1,5 +1,5 @@
 {
-  "createdAt": 1699226648085,
+  "createdAt": 1699399529427,
   "data": [
     {
       "name": "songs",
@@ -1710,9 +1710,9 @@
                   "type": "folder",
                   "children": [
                     {
-                      "name": "Cutting Crew - (I Just) Died in Your Arms",
+                      "name": "Brave Heart Theme",
                       "type": "song",
-                      "updateDate": "2023-11-05T22:42:31.111Z",
+                      "updateDate": "2023-11-07T02:33:48.848Z",
                       "meta": {}
                     },
                     {
@@ -1848,9 +1848,19 @@
                   ]
                 },
                 {
+                  "name": "Cutting Crew - (I Just) Died in Your Arms [The Papayas]",
+                  "type": "song",
+                  "updateDate": "2023-11-05T23:33:43.190Z",
+                  "meta": {
+                    "fullName": "Cutting Crew - (I Just) Died in Your Arms [The Papayas]",
+                    "shortName": "Cutting Crew - (I Just) Died in Your Arms",
+                    "arrangedBy": "The Papayas"
+                  }
+                },
+                {
                   "name": "Iron Maiden - Fear of the Dark [The Papayas]",
                   "type": "song",
-                  "updateDate": "2023-11-05T23:12:40.821Z",
+                  "updateDate": "2023-11-05T23:32:26.314Z",
                   "meta": {
                     "fullName": "Iron Maiden - Fear of the Dark [The Papayas]",
                     "shortName": "Iron Maiden - Fear of the Dark",

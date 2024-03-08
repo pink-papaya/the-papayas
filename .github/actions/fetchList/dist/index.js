@@ -5960,7 +5960,7 @@ async function run() {
       JSON.stringify(updatedSongList.data) !==
       JSON.stringify(currentSongList.data)
     ) {
-      // write a prettified version so make diffs readable on github
+      // write a prettified version to make diffs readable on github
       fs.writeFileSync(songListPath, JSON.stringify(updatedSongList, null, 2));
     }
   } catch (error) {

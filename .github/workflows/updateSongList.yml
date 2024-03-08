@@ -22,12 +22,15 @@ jobs:
 
       - name: Get personal access token username
         id: get_pat_username
-        run: echo "ci_pat_user=$(curl -s https://${{ secrets.CI_PERSONAL_ACCESS_TOKEN }}:@api.github.com/user | jq -r .name)" >> $GITHUB_OUTPUT
+        run: |
+          echo "ci_pat_user=$(curl -s https://${{ secrets.CI_PERSONAL_ACCESS_TOKEN }}:@api.github.com/user | jq -r .name)" >> $GITHUB_OUTPUT
+          echo "ci_pat_email=$(curl -s https://${{ secrets.CI_PERSONAL_ACCESS_TOKEN }}:@api.github.com/user | jq -r .email)" >> $GITHUB_OUTPUT
         shell: bash
 
       - name: Commit changes
         run: |
           git config --local user.name "${{ steps.get_pat_username.outputs.ci_pat_user }}"
+          git config --local user.email "${{ steps.get_pat_username.outputs.ci_pat_email }}"
           git add .
           if [ -z "$(git status --porcelain)" ]; then
             exit 0

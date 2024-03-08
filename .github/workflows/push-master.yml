@@ -1,4 +1,4 @@
-name: push-develop
+name: push-master
 
 on:
   push:
@@ -53,7 +53,7 @@ jobs:
 
       - name: Deploy to server
         run: |
-          rsync -azP \
-            -e "ssh -i $HOME/.ssh/id_ed25519 \
-            -p ${{ secrets.DEPLOY_HOST_PORT }}" \
-            ./dist ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_DIR }}
+          rsync -azP --delete \
+             -e "ssh -i $HOME/.ssh/id_ed25519 \
+             -p ${{ secrets.DEPLOY_HOST_PORT }}" \
+             ./dist/ ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_DIR }}

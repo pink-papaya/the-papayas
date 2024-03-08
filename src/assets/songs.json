@@ -1,5 +1,5 @@
 {
-  "createdAt": 1707693878118,
+  "createdAt": 1709924434472,
   "data": [
     {
       "name": "songs",
@@ -5002,6 +5002,12 @@
               "meta": {}
             }
           ]
+        },
+        {
+          "name": "deploy-test",
+          "type": "song",
+          "updateDate": "2024-03-08T18:54:22.288Z",
+          "meta": {}
         }
       ]
     }

@@ -12,16 +12,22 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.CI_PERSONAL_ACCESS_TOKEN }}
 
       - name: Replace song list
         uses: ./.github/actions/fetchList/
         with:
           API_ENDPOINT: ${{secrets.API_ENDPOINT}}
 
+      - name: Get personal access token username
+        id: get_pat_username
+        run: echo "ci_pat_user=$(curl -s https://${{ secrets.CI_PERSONAL_ACCESS_TOKEN }}:@api.github.com/user | jq -r .name)" >> $GITHUB_OUTPUT
+        shell: bash
+
       - name: Commit changes
         run: |
-          git config --local user.email "$(git log --format='%ae' HEAD^!)"
-          git config --local user.name "$(git log --format='%an' HEAD^!)"
+          git config --local user.name "${{ steps.get_pat_username.outputs.ci_pat_user }}"
           git add .
           if [ -z "$(git status --porcelain)" ]; then
             exit 0

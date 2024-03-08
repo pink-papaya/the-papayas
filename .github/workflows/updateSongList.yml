@@ -11,13 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Replace song list
         uses: ./.github/actions/fetchList/
         with:
           API_ENDPOINT: ${{secrets.API_ENDPOINT}}
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Commit changes
         run: |

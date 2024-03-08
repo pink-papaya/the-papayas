@@ -12,7 +12,7 @@ jobs:
 
     environment:
       name: Production
-      url: https://papayas-studio.dev
+      url: https://papaya-studios.dev
 
     steps:
       - name: Setup repo

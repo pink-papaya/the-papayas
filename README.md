@@ -1,6 +1,6 @@
 # The-papayas
 
-https://quizzical-panini-8491ed.netlify.app/
+https://papaya-studios.dev/
 
 Simple web app that displays a directory structure of midi files.
 

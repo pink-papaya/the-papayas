@@ -1,5 +1,5 @@
 {
-  "createdAt": 1710545087837,
+  "createdAt": 1710951813485,
   "data": [
     {
       "name": "songs",
@@ -9,6 +9,924 @@
           "name": "unsorted",
           "type": "folder",
           "children": [
+            {
+              "name": "The_Love_Pack_2024",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "8 Octet",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Led Zeppelin - (Octet) Thank You (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:54.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Stevie Ray Vaughn - (Octet) Pride and Joy (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:54.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Ryu - (Octet) From the Beginning Until Now (Wren Darkcloud)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:54.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Panic at the Disco - (Octet) Lying is the Most Fun (Jaiyi Yatomoka)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:52.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Avril Lavigne - (Octet) Girlfriend (Jaiyi Yatomoka)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:50.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Dion - (Octet) Runaround Sue (Wren Darkcloud)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:48.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Willow - (Octet) Wait a Minute (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:42.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Ugly Kid Joe - (Octet) Cat's in the Cradle (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:28.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Oh Hellos - (Octet) Soldier Poet King (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:20.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Colbie Caillat - (Octet) Bubbly (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:12.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Billy Idol - (Octet) Rebel Yell (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:06.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Avicii - (Octet) Hey Brother (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:00.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Octet) Let Me Down Slowly (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:58.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Octet) If We Have Each Other (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:52.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Octet) If I Killed Someone for You (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:48.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alannah Myles - (Octet) Black Velvet (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:40.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Adele - (Octet) Set Fire to the Rain (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:36.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Norah Jones - (Octet) Don't Know Why (Black Rose)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:32.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Modern Talking - (Octet) You're My Heart You're My Soul (Black Rose)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:30.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Edward Elgar - (Octet) Salut d'Amore (Black Rose)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:28.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Chopin - (Octet) Marriage D'Amour or Spring Waltz Rock Version (Black Rose)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:26.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Edvard Grieg - (Octet) Peer Gynt - Solvejgs Song (Black Rose)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:26.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Bon Jovi - (Octet) I'll Be There for You (Wren Darkcloud)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:24.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Nightwish - (Octet) While Your Lips Are Still Red (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:22.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Xenogears - (Octet) Small Two of Pieces (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:10.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Type O Negative - (Octet) Love You to Death (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:10.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Tears of Passion - (Octet) Angel (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:08.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Amaranthe - (Octet) Amaranthine (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:06.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Nightwish - (Octet) Wish I Had An Angel (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:04.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Muse - (Octet) Endlessly (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:04.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Boston - (Octet) More than a Feeling (Wren Darkcloud)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:00.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Saigon Kick - (Octet) Love Is On the Way (Wren Darkcloud)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:00.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Wheatus - (Octet) Teenage Dirtbag (Wren Darkcloud)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:58.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Cinderella - (Octet) Don't Know What You Got Till It's Gone (Wren Darkcloud)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:56.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Ray Price - (Octet) Heartaches By the Number (Wren Darkcloud)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:56.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Nazareth - (Octet) Love Hurts (Wren Darkcloud)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:56.000Z",
+                      "meta": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "7 Septet",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Wheatus - (Septet) Teenage Dirtbag v5 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:10.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Strokes - (Septet) Ode To The Mets v2 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:10.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Police - (Septet) Every Breath You Take v7 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:10.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Outfield - (Septet) Your Love v5 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:08.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Poison - (Septet) Talk Dirty To Me v14 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:06.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Motley Crue - (Septet) Kickstart My Heart v9 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:06.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Kiss - (Septet) I Was Made For Loving You v15 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:06.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Kaiser Chiefs - (Septet) Ruby v17 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:04.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Hall and Oates - (Septet) Maneater v7 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:04.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Killers - (Septet) When You Were Young v11 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:02.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Skid Row - (Septet) I Remember You v8 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:02.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Simple Plan - (Septet) Untitled v3 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:02.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Final Fantasy X - (Septet) To Zanarkand FamilyJules v7 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:00.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Shovel Knight - (Septet) The Requiem Of Shield Knight v7 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:00.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Scorpions - (Septet) Rock You Like A Hurricane v11 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:40:00.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Bootsy Collins - (Septet) I'd Rather Be With You v14 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:39:58.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Arctic Monkeys - (Septet) Number 1 Party Anthem v9 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:39:56.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Hako Yamasaki - (Septet) Help Me v3 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:39:56.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Guns N Roses - (Septet) Sweet Child of Mine v8 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:39:54.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Guns N Roses - (Septet) November Rain v8 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:39:54.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Guns N Roses - (Septet) Estranged v3 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:39:54.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Finch - (Septet) What It Is To Burn v5 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:39:52.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Final Fantasy X-2 - (Septet) Yuna's Ballad v3 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:39:52.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Fugees - (Septet) Killing Me Softly v2 (Kunges)",
+                      "type": "song",
+                      "updateDate": "2024-02-10T17:39:52.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Willow - (Septet) Wait a Minute (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:44.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Vance Joy - (Septet) Riptide (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:38.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Ugly Kid Joe - (Septet) Cat's in the Cradle (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:30.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Oh Hellos - (Septet) Soldier Poet King (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:22.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Colbie Caillat - (Septet) Bubbly (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:16.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Billy Idol - (Septet) Rebel Yell (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:08.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Avicii - (Septet) Hey Brother (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:04.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Septet) Let Me Down Slowly (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:58.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Septet) If We Have Each Other (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:54.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Septet) If I Killed Someone for You (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:50.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alannah Myles - (Septet) Black Velvet (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:46.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Adele - (Septet) Set Fire to the Rain (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:38.000Z",
+                      "meta": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "6 Sextet",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Muse - (Sextet) Starlight (Zevraxx Firmah)",
+                      "type": "song",
+                      "updateDate": "2024-02-09T10:54:28.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Willow - (Sextet) Wait a Minute (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:44.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Vance Joy - (Sextet) Riptide (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:38.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Ugly Kid Joe - (Sextet) Cat's in the Cradle (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:32.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Oh Hellos - (Sextet) Soldier Poet King (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:22.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Colbie Caillat - (Sextet) Bubbly (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:18.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Billy Idol - (Sextet) Rebel Yell (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:10.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Avicii - (Sextet) Hey Brother (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:04.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Sextet) Let Me Down Slowly (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:58.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Sextet) If We Have Each Other (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:54.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Sextet) If I Killed Someone for You (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:50.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alannah Myles - (Sextet) Black Velvet (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:46.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Adele - (Sextet) Set Fire to the Rain (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:40.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Nightwish - (Sextet) Wish I Had An Angel (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:16.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Xenogears - (Sextet) Small Two of Pieces (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:12.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Type O Negative - (Sextet) Love You to Death (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:10.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Nightwish - (Sextet) Slow Love Slow (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:06.000Z",
+                      "meta": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "5 Quintet",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "The Beatles - (Quintet) Something (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:48.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Beatles - (Quintet) Michelle (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:48.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Patti Smith - (Quintet) Because the Night (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:46.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Chris de Burgh - (Quintet) Lady In Red (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:46.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Spice Girls - (Quintet) 2 Become 1 (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:46.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Willow - (Quintet) Wait a Minute (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:42.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Vance Joy - (Quintet) Riptide (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:36.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Ugly Kid Joe - (Quintet) Cat's in the Cradle (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:30.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Oh Hellos - (Quintet) Soldier Poet King (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:22.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Colbie Caillat - (Quintet) Bubbly (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:16.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Billy Idol - (Quintet) Rebel Yell (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:08.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Avicii - (Quintet) Hey Brother (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:02.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Quintet) Let Me Down Slowly (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:58.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Quintet) If We Have Each Other (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:54.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Quintet) If I Killed Someone for You (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:48.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alannah Myles - (Quintet) Black Velvet (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:42.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Adele - (Quintet) Set Fire to the Rain (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:38.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "George Michael - (Quintet) One More Try (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:34.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Meat Loaf - (Quintet) I'd Do Anything for Love (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:20.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Penguins - (Quintet) Earth Angel (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:20.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Puddle of Mudd - (Quintet) She Hates Me (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:20.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Halestorm - (Quintet) Love Bites So Do I (TSQ)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:18.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Bryan Adams - (Quintet) Everything I Do I Do It for You Radio Edit (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:18.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Joe Dassin - (Quintet) Et Si Tu N'Existais Pas (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:14.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Police - (Quintet) Every Breath You Take (Skynyrd Fraefeolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:52.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Poison - (Quintet) Every Rose Has Its Thorn (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:50.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Joan Jett - (Quintet) I Hate Myself For Loving You (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:50.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Jack Jones - (Quintet) Love Boat (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:48.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Heart - (Quintet) All I Wanna Do Is Make Love To You (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:48.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Divinyls - (Quintet) I Touch Myself (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:46.000Z",
+                      "meta": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "4 Quartet",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Willow - (Quartet) Wait a Minute (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:42.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Vance Joy - (Quartet) Riptide (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:34.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Ugly Kid Joe - (Quartet) Cat's in the Cradle (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:30.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Oh Hellos - (Quartet) Soldier Poet King (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:20.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Colbie Caillat - (Quartet) Bubbly (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:14.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Billy Idol - (Quartet) Rebel Yell (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:06.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Quartet) If We Have Each Other (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:52.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alec Benjamin - (Quartet) If I Killed Someone for You (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:48.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Alannah Myles - (Quartet) Black Velvet (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:42.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Adele - (Quartet) Set Fire to the Rain (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:38.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Tears of Passion - (Quartet) Angel (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:14.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Type O Negative - (Quartet) Love You to Death (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:10.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Nightwish - (Quartet) Slow Love Slow (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:04.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Extreme - (Quartet) More Than Words (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:48.000Z",
+                      "meta": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "3 Trio",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Vance Joy - (Trio) Riptide (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:38.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Colbie Caillat - (Trio) Bubbly (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:53:18.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Adele - (Trio) Set Fire to the Rain (Shadow Goddess)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:40.000Z",
+                      "meta": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "2 Duet",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Joe Dassin - (Duet) Et Si Tu N'Existais Pas (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:14.000Z",
+                      "meta": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "1 Solo",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "Bryan Adams - (HRP) Everything I Do I Do It for You Radio Edit (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:36.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Spice Girls - (LTE) 2 Become 1 (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:34.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Xenogears - (HRP) Small Two of Pieces (Eltana Qalabar)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:12.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "The Penguins - (GC) Earth Angel (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:02.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Puddle of Mudd - (GO) She Hates Me (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:52:00.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Poison - (GC) Every Rose Has Its Thorn (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:54.000Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Divinyls - (GC) I Touch Myself v2 (Skynyrd Fraefolgwyn)",
+                      "type": "song",
+                      "updateDate": "2024-02-08T13:51:52.000Z",
+                      "meta": {}
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "name": "Eltanas_Ensembles_II",
               "type": "folder",
@@ -1902,6 +2820,36 @@
                       "meta": {}
                     }
                   ]
+                },
+                {
+                  "name": "Fire Emblem The Sacred Stones - Comrades OCTET Kyo Martic",
+                  "type": "song",
+                  "updateDate": "2024-03-20T16:19:49.155Z",
+                  "meta": {}
+                },
+                {
+                  "name": "Vonya Toniri - Metallica - Fade To Black",
+                  "type": "song",
+                  "updateDate": "2024-03-20T16:18:49.385Z",
+                  "meta": {}
+                },
+                {
+                  "name": "Fullmetal Alchemist - OP 4 Rewrite OCTET Kyo Martic",
+                  "type": "song",
+                  "updateDate": "2024-03-20T16:13:58.914Z",
+                  "meta": {}
+                },
+                {
+                  "name": "Asian Kung-Fu Generation - Rewrite OCTET Kyo Martic",
+                  "type": "song",
+                  "updateDate": "2024-03-20T16:13:38.929Z",
+                  "meta": {}
+                },
+                {
+                  "name": "Persona - School Days OCTET Kyo Martic",
+                  "type": "song",
+                  "updateDate": "2024-03-20T16:11:46.583Z",
+                  "meta": {}
                 },
                 {
                   "name": "Cutting Crew - (I Just) Died in Your Arms [The Papayas]",

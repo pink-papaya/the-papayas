@@ -1,5 +1,5 @@
 {
-  "createdAt": 1718493960821,
+  "createdAt": 1719185148291,
   "data": [
     {
       "name": "songs",
@@ -2803,6 +2803,12 @@
                   "name": "wip",
                   "type": "folder",
                   "children": [
+                    {
+                      "name": "Nightwish - Shudder Before the Beautiful (Custom Work)",
+                      "type": "song",
+                      "updateDate": "2024-06-22T20:00:09.884Z",
+                      "meta": {}
+                    },
                     {
                       "name": "Nightwish - Alpenglow (Custom Work) test",
                       "type": "song",

@@ -1,5 +1,5 @@
 {
-  "createdAt": 1719185148291,
+  "createdAt": 1725579017474,
   "data": [
     {
       "name": "songs",
@@ -1326,6 +1326,16 @@
               "type": "folder",
               "children": [
                 {
+                  "name": "Yoasobi - Idol [Aragi Shota]",
+                  "type": "song",
+                  "updateDate": "2024-09-05T01:17:49.604Z",
+                  "meta": {
+                    "fullName": "Yoasobi - Idol [Aragi Shota]",
+                    "shortName": "Yoasobi - Idol",
+                    "arrangedBy": "Aragi Shota"
+                  }
+                },
+                {
                   "name": "ANAMANAGUCHI - Miku [The Papayas]",
                   "type": "song",
                   "updateDate": "2024-04-25T21:31:40.787Z",
@@ -1806,6 +1816,16 @@
               "type": "folder",
               "children": [
                 {
+                  "name": "ASMRZ - Goodnight Ojosama [RandomWOL]",
+                  "type": "song",
+                  "updateDate": "2024-09-05T01:30:06.360Z",
+                  "meta": {
+                    "fullName": "ASMRZ - Goodnight Ojosama [RandomWOL]",
+                    "shortName": "ASMRZ - Goodnight Ojosama",
+                    "arrangedBy": "RandomWOL"
+                  }
+                },
+                {
                   "name": "BLACKPINK - Forever Young [Kenta Shiro]",
                   "type": "song",
                   "updateDate": "2024-03-21T00:15:13.913Z",
@@ -1855,6 +1875,16 @@
                   "name": "xiv",
                   "type": "folder",
                   "children": [
+                    {
+                      "name": "FFXIV Dawntrail - Bee My Honey [Vonya Toniri]",
+                      "type": "song",
+                      "updateDate": "2024-09-05T01:15:22.918Z",
+                      "meta": {
+                        "fullName": "FFXIV Dawntrail - Bee My Honey [Vonya Toniri]",
+                        "shortName": "FFXIV Dawntrail - Bee My Honey",
+                        "arrangedBy": "Vonya Toniri"
+                      }
+                    },
                     {
                       "name": "Final Fantasy XIV A Realm Reborn - Answers [The Papayas]",
                       "type": "song",
@@ -1943,6 +1973,16 @@
               "name": "games",
               "type": "folder",
               "children": [
+                {
+                  "name": "Streets of Rage 2 - Dreamer [Kesmo]",
+                  "type": "song",
+                  "updateDate": "2024-09-05T01:11:12.576Z",
+                  "meta": {
+                    "fullName": "Streets of Rage 2 - Dreamer [Kesmo]",
+                    "shortName": "Streets of Rage 2 - Dreamer",
+                    "arrangedBy": "Kesmo"
+                  }
+                },
                 {
                   "name": "Xenoblade Chronicles - Gaur Plains Day [Eltana Qalabar]",
                   "type": "song",
@@ -2089,6 +2129,26 @@
               "name": "anime",
               "type": "folder",
               "children": [
+                {
+                  "name": "Initial D - Running in the 90s [Kesmo]",
+                  "type": "song",
+                  "updateDate": "2024-09-05T01:09:29.047Z",
+                  "meta": {
+                    "fullName": "Initial D - Running in the 90s [Kesmo]",
+                    "shortName": "Initial D - Running in the 90s",
+                    "arrangedBy": "Kesmo"
+                  }
+                },
+                {
+                  "name": "SiM - The Rumbling [Aragi Shota]",
+                  "type": "song",
+                  "updateDate": "2024-09-05T01:01:42.097Z",
+                  "meta": {
+                    "fullName": "SiM - The Rumbling [Aragi Shota]",
+                    "shortName": "SiM - The Rumbling",
+                    "arrangedBy": "Aragi Shota"
+                  }
+                },
                 {
                   "name": "The Melancholy of Haruhi Suzumiya - God knows [Aragi Shota]",
                   "type": "song",
@@ -2245,6 +2305,36 @@
               "name": "metal",
               "type": "folder",
               "children": [
+                {
+                  "name": "Eluveitie - Ne Regv Na [Eltana Qalabar]",
+                  "type": "song",
+                  "updateDate": "2024-09-05T01:26:21.918Z",
+                  "meta": {
+                    "fullName": "Eluveitie - Ne Regv Na [Eltana Qalabar]",
+                    "shortName": "Eluveitie - Ne Regv Na",
+                    "arrangedBy": "Eltana Qalabar"
+                  }
+                },
+                {
+                  "name": "Eluveitie - Brictom [Eltana Qalabar]",
+                  "type": "song",
+                  "updateDate": "2024-09-05T01:26:21.912Z",
+                  "meta": {
+                    "fullName": "Eluveitie - Brictom [Eltana Qalabar]",
+                    "shortName": "Eluveitie - Brictom",
+                    "arrangedBy": "Eltana Qalabar"
+                  }
+                },
+                {
+                  "name": "Eluveitie - Andro [Eltana Qalabar]",
+                  "type": "song",
+                  "updateDate": "2024-09-05T01:26:21.906Z",
+                  "meta": {
+                    "fullName": "Eluveitie - Andro [Eltana Qalabar]",
+                    "shortName": "Eluveitie - Andro",
+                    "arrangedBy": "Eltana Qalabar"
+                  }
+                },
                 {
                   "name": "Sabaton - Carolus Rex (orchestral version) [The Papayas]",
                   "type": "song",
@@ -2804,6 +2894,18 @@
                   "type": "folder",
                   "children": [
                     {
+                      "name": "Kamelot - Center of the Universe test 2",
+                      "type": "song",
+                      "updateDate": "2024-09-05T00:27:03.088Z",
+                      "meta": {}
+                    },
+                    {
+                      "name": "Kamelot - Center of the Universe test",
+                      "type": "song",
+                      "updateDate": "2024-09-04T22:32:38.154Z",
+                      "meta": {}
+                    },
+                    {
                       "name": "Nightwish - Shudder Before the Beautiful (Custom Work)",
                       "type": "song",
                       "updateDate": "2024-06-22T20:00:09.884Z",
@@ -3044,6 +3146,26 @@
                       "meta": {}
                     }
                   ]
+                },
+                {
+                  "name": "Nightwish - The Greatest Show on Earth (All Parts) [The Papayas]",
+                  "type": "song",
+                  "updateDate": "2024-09-05T02:14:06.359Z",
+                  "meta": {
+                    "fullName": "Nightwish - The Greatest Show on Earth (All Parts) [The Papayas]",
+                    "shortName": "Nightwish - The Greatest Show on Earth (All Parts)",
+                    "arrangedBy": "The Papayas"
+                  }
+                },
+                {
+                  "name": "Kamelot - Center of the Universe [The Papayas]",
+                  "type": "song",
+                  "updateDate": "2024-09-05T00:45:27.764Z",
+                  "meta": {
+                    "fullName": "Kamelot - Center of the Universe [The Papayas]",
+                    "shortName": "Kamelot - Center of the Universe",
+                    "arrangedBy": "The Papayas"
+                  }
                 },
                 {
                   "name": "Nightwish - Come Cover me v2 [The Papayas]",
